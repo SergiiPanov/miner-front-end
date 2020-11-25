@@ -1,0 +1,10 @@
+@import "mixins";
+@import "variables";
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  @include font(normal,normal,14px,17px);
+}

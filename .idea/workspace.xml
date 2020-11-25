@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="838d5b8f-0c91-4d3d-9f84-a754d75acf48" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/miner-front-end.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/Auth/containers/SignIn/SignIn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/Auth/containers/SignIn/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/Auth/containers/SignUp/SignUp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/Auth/containers/SignUp/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/Auth/containers/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/Auth/store/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/Auth/store/constants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/Auth/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/Auth/store/reducers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/Auth/store/sagas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/Auth/store/selectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/Main/containers/Main/Main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/Main/containers/Main/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/Main/containers/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/CreateRoom/CreateRoom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/CreateRoom/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/FindRoom/FindRoom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/FindRoom/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/GameSetter/GameSetter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/GameSetter/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/MainSweeper/MainSweeper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/MainSweeper/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/OfflineSetter/OfflineSetter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/OfflineSetter/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/OnlineSetter/OnlineSetter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/OnlineSetter/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/store/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/store/constants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/store/reducers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/store/sagas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/store/selectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entries/ApiTransport.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/history/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routers/constants/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routers/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/sagas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/selectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/requireAuth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/routerAssessors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1kXgzchXa3uEAjfgkpZoq5dn8Gg" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../minesweeper_backend_api" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/utils" />
+      <recent name="$PROJECT_DIR$/src/Containers" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Containers/Minesweeper/Containers" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/Containers/Main/containers" />
+      <recent name="$PROJECT_DIR$/src/Containers/Main/containers/Main" />
+      <recent name="$PROJECT_DIR$/src/Containers/Minesweeper" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="App.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/App.js" working-dir="$PROJECT_DIR$/src">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.App.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="838d5b8f-0c91-4d3d-9f84-a754d75acf48" name="Default Changelist" comment="" />
+      <created>1605852614204</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605852614204</updated>
+      <workItem from="1605852615271" duration="37746000" />
+      <workItem from="1605908846866" duration="17037000" />
+      <workItem from="1605957186122" duration="28846000" />
+      <workItem from="1606029205858" duration="3884000" />
+      <workItem from="1606033114908" duration="36184000" />
+      <workItem from="1606110719361" duration="12177000" />
+      <workItem from="1606136176626" duration="23048000" />
+      <workItem from="1606173035127" duration="5682000" />
+      <workItem from="1606254056558" duration="12337000" />
+      <workItem from="1606285262267" duration="3893000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="696" y="355" width="590" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606160545423">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="696" y="355" width="590" height="403" key="#com.intellij.fileTypes.FileTypeChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1606160545423" />
+    <state x="729" y="302" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606160588168">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="729" y="302" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1606160588168" />
+    <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1606285629275">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1606285629275" />
+    <state width="1825" height="340" key="GridCell.Tab.0.bottom" timestamp="1605886962567">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1825" height="340" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1605886962567" />
+    <state width="1825" height="340" key="GridCell.Tab.0.center" timestamp="1605886962567">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1825" height="340" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1605886962567" />
+    <state width="1825" height="340" key="GridCell.Tab.0.left" timestamp="1605886962566">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1825" height="340" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1605886962566" />
+    <state width="1825" height="340" key="GridCell.Tab.0.right" timestamp="1605886962567">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1825" height="340" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1605886962567" />
+    <state width="1825" height="340" key="GridCell.Tab.1.bottom" timestamp="1605886962568">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1825" height="340" key="GridCell.Tab.1.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1605886962568" />
+    <state width="1825" height="340" key="GridCell.Tab.1.center" timestamp="1605886962568">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1825" height="340" key="GridCell.Tab.1.center/72.27.1848.1053@72.27.1848.1053" timestamp="1605886962568" />
+    <state width="1825" height="340" key="GridCell.Tab.1.left" timestamp="1605886962568">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1825" height="340" key="GridCell.Tab.1.left/72.27.1848.1053@72.27.1848.1053" timestamp="1605886962568" />
+    <state width="1825" height="340" key="GridCell.Tab.1.right" timestamp="1605886962568">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1825" height="340" key="GridCell.Tab.1.right/72.27.1848.1053@72.27.1848.1053" timestamp="1605886962568" />
+    <state width="1825" height="340" key="GridCell.Tab.2.bottom" timestamp="1605886962569">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1825" height="340" key="GridCell.Tab.2.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1605886962569" />
+    <state width="1825" height="340" key="GridCell.Tab.2.center" timestamp="1605886962569">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1825" height="340" key="GridCell.Tab.2.center/72.27.1848.1053@72.27.1848.1053" timestamp="1605886962569" />
+    <state width="1825" height="340" key="GridCell.Tab.2.left" timestamp="1605886962569">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1825" height="340" key="GridCell.Tab.2.left/72.27.1848.1053@72.27.1848.1053" timestamp="1605886962569" />
+    <state width="1825" height="340" key="GridCell.Tab.2.right" timestamp="1605886962569">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1825" height="340" key="GridCell.Tab.2.right/72.27.1848.1053@72.27.1848.1053" timestamp="1605886962569" />
+    <state width="1825" height="340" key="GridCell.Tab.3.bottom" timestamp="1605886962570">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1825" height="340" key="GridCell.Tab.3.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1605886962570" />
+    <state width="1825" height="340" key="GridCell.Tab.3.center" timestamp="1605886962570">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1825" height="340" key="GridCell.Tab.3.center/72.27.1848.1053@72.27.1848.1053" timestamp="1605886962570" />
+    <state width="1825" height="340" key="GridCell.Tab.3.left" timestamp="1605886962569">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1825" height="340" key="GridCell.Tab.3.left/72.27.1848.1053@72.27.1848.1053" timestamp="1605886962569" />
+    <state width="1825" height="340" key="GridCell.Tab.3.right" timestamp="1605886962570">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1825" height="340" key="GridCell.Tab.3.right/72.27.1848.1053@72.27.1848.1053" timestamp="1605886962570" />
+    <state x="660" y="252" key="run.anything.popup" timestamp="1606033474933">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="660" y="252" key="run.anything.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1606033474933" />
+  </component>
+</project>
