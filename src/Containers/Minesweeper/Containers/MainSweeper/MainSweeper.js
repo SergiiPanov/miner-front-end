@@ -131,7 +131,6 @@ export default ({history}) => {
             }
             sessionStorage.setItem("allFlagsPosition" , JSON.stringify(allFlagsPosition))
             sessionStorage.setItem("idStorage" , JSON.stringify(id))
-            console.log(allFlagsPosition)
             return allFlagsPosition
         })
 
@@ -177,7 +176,6 @@ function GameFieldHeader({firstUser, secondUser,isActiveField,id,secondUserActiv
 function StaticField({activeArr, onFieldLeftClickAction, onFieldRightClickAction, allFlagsPosition, fieldSize}) {
     const classes = useStyles({fieldSize});
     return (
-
         <div className={classes.field}>
             {        activeArr.map((square, position) => {
                     let style={};
