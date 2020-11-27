@@ -1,14 +1,20 @@
 import React, {useState, useEffect} from 'react';
 import {makeStyles} from "@material-ui/core/styles";
 import {useDispatch, useSelector} from "react-redux";
-import {getBombsCount, getFieldSize, getGameField, getVictoryStatus, getFirstUser, getSecondUser} from "../../store/selectors"
+import {getBombsCount, getSecondUserPoint, getFirstUserPoint, getIsActiveField, getFieldSize, getGameField, getVictoryStatus, getFirstUser, getSecondUser, getSecondUserActive, getFirstUserActive} from "../../store/selectors"
+import {} from "../../../Auth/store/selectors"
 import * as actions from "../../store/actions"
+import {getUser} from "../../../Auth/store/selectors";
+import {Button} from "@material-ui/core";
+import {createSelector} from "reselect";
 
 const useStyles = makeStyles(theme => ({
     field: {
         display: "flex",
         flexWrap: "wrap",
         justifyContent: "center",
+        width: props => props.fieldSize ? `${props.fieldSize * 30}px` : null,
+        height: props => props.fieldSize ? `${props.fieldSize * 30}px` : null,
     },
     square: {
         cursor: "pointer",
@@ -26,38 +32,45 @@ const useStyles = makeStyles(theme => ({
     },
     flag : {
         background: "green",
+    },
+    firstUserActive : {
+        background : props => props.firstUserActive ? "green" : "white"
+    },
+    secondUserActive : {
+        background : props => props.secondUserActive ? "green" : "white"
     }
 }))
 
 
 export default ({history}) => {
-    const classes = useStyles();
     const dispatch = useDispatch()
-    const [activeArr, setActiveArr] = useState([])
     const [allFlagsPosition, setAllFlagsPosition] = useState([])
-    const [allBombsPosition, setAllBombsPosition] = useState([])
-    const [isVictory, setVictory] = useState(false)
-    const [pointCounter, setPointCounter] = useState(0)
-
-
+    const mainUser = useSelector(getUser())
     const id = history.location.pathname.split("/")[2]
-    const bombsCount = useSelector(getBombsCount())
     const fieldSize = useSelector(getFieldSize())
     const gameField = useSelector(getGameField())
     const victoryStatus = useSelector(getVictoryStatus())
     const firstUser = useSelector(getFirstUser())
     const secondUser = useSelector(getSecondUser())
+    const firstUserActive = useSelector(getFirstUserActive())
+    const secondUserActive = useSelector(getSecondUserActive())
+    const isActiveField = useSelector(getIsActiveField())
+    const firstUserPoint = useSelector(getFirstUserPoint())
+    const secondUserPoint = useSelector(getSecondUserPoint())
+
+
+
 
     useEffect(() => {
         const interval = setInterval(() => {
             dispatch(actions.A_fetchFieldSizeAndBombsRequest(id));
-        }, 300);
+            victoryStatus && clearInterval(interval);
+        }, 50);
         return () => clearInterval(interval);
-    }, [dispatch, id])
 
-    useEffect(() => {
-        setActiveArr(gameField)
-    }, [gameField])
+    }, [dispatch, id, victoryStatus])
+
+
     useEffect(() => {
         const storage = JSON.parse(sessionStorage.getItem("allFlagsPosition"))
         const idStorage = JSON.parse(sessionStorage.getItem("idStorage"))
@@ -65,10 +78,6 @@ export default ({history}) => {
             setAllFlagsPosition(storage)
         }
     }, [id])
-
-    useEffect(() => {
-        setVictory(victoryStatus)
-    }, [victoryStatus])
 
     // const bombGenerator = (bombs, position, allBombsPosition) => {
     //     const oneBombPosition = Math.floor(Math.random() * fieldSize ** 2)
@@ -81,13 +90,6 @@ export default ({history}) => {
     //     return counter
     // }
     //
-    // const finder = (index) => {
-    //     let bombAround = [index - fieldSize, index + fieldSize];
-    //     Number(index + 1) % fieldSize === 0 ? bombAround = [...bombAround, index - 1, index - fieldSize - 1, index + fieldSize - 1] :
-    //         index % fieldSize === 0 ? bombAround = [...bombAround, index + 1, index - fieldSize + 1, index + fieldSize + 1] :
-    //             bombAround = [...bombAround, index - 1, index - fieldSize - 1, index + fieldSize - 1, index + 1, index - fieldSize + 1, index + fieldSize + 1]
-    //     return bombAround
-    // }
     //
     // const setZero = () => {
     //     for (let i = 0; i < 20; i++) {
@@ -100,8 +102,8 @@ export default ({history}) => {
     // }, [activeArr, setActiveArr, allBombsPosition])
 
     const onFieldLeftClickAction = (position) => {
-        if (activeArr[position] === 10) {
-            dispatch(actions.A_fetchFieldChangeRequest({id, position}));
+        if (gameField[position] === 10) {
+            dispatch(actions.A_fetchFieldChangeRequest({id, position, mainUser}));
             setAllFlagsPosition(allFlagsPosition => allFlagsPosition.filter((item)=> item !== position))
         }
 
@@ -123,7 +125,7 @@ export default ({history}) => {
     const onFieldRightClickAction = (e, position) => {
         e.preventDefault()
         setAllFlagsPosition(allFlagsPosition => {
-            if (activeArr[position] === 10) {
+            if (gameField[position] === 10) {
                 allFlagsPosition.includes(position) ? allFlagsPosition = allFlagsPosition.filter((item)=> item !== position) :
                 allFlagsPosition = [...allFlagsPosition, position]
             }
@@ -137,40 +139,61 @@ export default ({history}) => {
         //setActiveArr(activeArr.map((item, index) => item === 10 && position === index ? 11 : item === 11 && position === index ? 10 : item))
     }
     return (
-        isVictory ? <div>victory</div> :
+//        isVictory ? <div>victory</div> :
             <div>
-                <p>NUMBER_ROOM: {id}</p>
-                <p>FIRST_USER: {firstUser}</p>
-                <p>SECOND_USER: {secondUser}</p>
-                <div style={{width: `${fieldSize * 30}px`, height: `${fieldSize * 30}px`}} className={classes.field}>
-                    <StaticField activeArr={activeArr}
+                <GameFieldHeader
+                    firstUser={firstUser}
+                    secondUser={secondUser}
+                    isActiveField={isActiveField}
+                    id={id}
+                    firstUserActive={firstUserActive}
+                    secondUserActive={secondUserActive}
+                    firstUserPoint={firstUserPoint}
+                    secondUserPoint={secondUserPoint}
+                />
+                    <StaticField activeArr={gameField}
                                  onFieldLeftClickAction={onFieldLeftClickAction}
                                  onFieldRightClickAction={onFieldRightClickAction}
-                                 allFlagsPosition={allFlagsPosition}/>
-
-                </div>
+                                 allFlagsPosition={allFlagsPosition}
+                                 fieldSize={fieldSize}/>
             </div>
     );
 }
+function GameFieldHeader({firstUser, secondUser,isActiveField,id,secondUserActive,firstUserActive, firstUserPoint, secondUserPoint}){
+    const classes = useStyles({secondUserActive,firstUserActive});
+    const dispatch = useDispatch()
+    return(
+        <div>
+            {secondUser && !isActiveField ?  <div>
+                <Button onClick={() => dispatch(actions.A_StartOnlineGameRequest(id))}>START</Button>
+            </div>: null}
+            {isActiveField ? null : <p>NUMBER_ROOM: {id}</p>}
+            <p className={classes.firstUserActive}>FIRST_USER: {firstUser} POINT: {firstUserPoint}</p>
+            <p className={classes.secondUserActive}>SECOND_USER: {secondUser} POINT: {secondUserPoint}</p>
+        </div>
+    )
+}
 
-function StaticField({activeArr, onFieldLeftClickAction, onFieldRightClickAction, allFlagsPosition}) {
-    const classes = useStyles();
-
+function StaticField({activeArr, onFieldLeftClickAction, onFieldRightClickAction, allFlagsPosition, fieldSize}) {
+    const classes = useStyles({fieldSize});
     return (
 
-        activeArr.map((square, position) => {
-            let style={};
-            if(allFlagsPosition.includes(position)){
-                style = {background: "red"}
-            }
-                return square === 10 ? <div onContextMenu={e => onFieldRightClickAction(e, position)}
-                                            onClick={() => onFieldLeftClickAction(position)} key={position}
-                                            style={style}
-                                            className={`${classes.square} ${classes.flag}`}/>:
-                    <div onContextMenu={e => onFieldRightClickAction(e, position)}
-                            onClick={() => onFieldLeftClickAction(position)} key={position}
-                            className={classes.square}>{square !== 0 ? square : null}</div>
-            }
-        )
+        <div className={classes.field}>
+            {        activeArr.map((square, position) => {
+                    let style={};
+                    if(allFlagsPosition.includes(position)){
+                        style = {background: "red"}
+                    }
+                    return square === 10 ? <div onContextMenu={e => onFieldRightClickAction(e, position)}
+                                                onClick={() => onFieldLeftClickAction(position)} key={position}
+                                                style={style}
+                                                className={`${classes.square} ${classes.flag}`}/>:
+                        <div onContextMenu={e => onFieldRightClickAction(e, position)}
+                             onClick={() => onFieldLeftClickAction(position)} key={position}
+                             className={classes.square}>{square !== 0 ? square : null}</div>
+                }
+            )}
+        </div>
+
     )
 }

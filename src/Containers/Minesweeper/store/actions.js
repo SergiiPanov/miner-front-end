@@ -19,3 +19,8 @@ export const A_SecondUserConnectRequest = secondUser => ({ type: constants.SECON
 export const A_SecondUserConnectSuccess = secondUser => ({ type: constants.SECOND_USER_CONNECT_SUCCESS, payload: secondUser });
 export const A_SecondUserConnectFailure = err => ({ type: constants.SECOND_USER_CONNECT_FAILURE, payload: err });
 export const A_SecondUserConnectClear = () => ({ type: constants.SECOND_USER_CONNECT_CLEAR});
+
+export const A_StartOnlineGameRequest = (id) => ({ type: constants.START_ONLINE_GAME_REQUEST, payload : id});
+export const A_StartOnlineGameSuccess = fieldAndBombs => ({ type: constants.START_ONLINE_GAME_SUCCESS, payload: fieldAndBombs });
+export const A_StartOnlineGameFailure = err => ({ type: constants.START_ONLINE_GAME_FAILURE, payload: err });
+export const A_StartOnlineGameClear = () => ({ type: constants.START_ONLINE_GAME_CLEAR});
