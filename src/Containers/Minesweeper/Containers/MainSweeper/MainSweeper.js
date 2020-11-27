@@ -65,7 +65,7 @@ export default ({history}) => {
         const interval = setInterval(() => {
             dispatch(actions.A_fetchFieldSizeAndBombsRequest(id));
             victoryStatus && clearInterval(interval);
-        }, 50);
+        }, 300);
         return () => clearInterval(interval);
 
     }, [dispatch, id, victoryStatus])

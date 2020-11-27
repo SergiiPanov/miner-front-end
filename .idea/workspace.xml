@@ -13,12 +13,6 @@
     <list default="true" id="838d5b8f-0c91-4d3d-9f84-a754d75acf48" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/MainSweeper/MainSweeper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/MainSweeper/MainSweeper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/Minesweeper/store/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/store/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/Minesweeper/store/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/store/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/Minesweeper/store/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/store/reducers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/Minesweeper/store/sagas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/store/sagas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/Minesweeper/store/selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/store/selectors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entries/ApiTransport.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/entries/ApiTransport.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +92,7 @@
       <workItem from="1606285262267" duration="6142000" />
       <workItem from="1606322072038" duration="7378000" />
       <workItem from="1606370312249" duration="5907000" />
-      <workItem from="1606434137372" duration="4510000" />
+      <workItem from="1606434137372" duration="5637000" />
     </task>
     <servers />
   </component>
