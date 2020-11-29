@@ -12,7 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="838d5b8f-0c91-4d3d-9f84-a754d75acf48" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entries/ApiTransport.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/entries/ApiTransport.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/OnlineMinesweeper/OnlineMinesweeper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/OnlineMinesweeper/OnlineMinesweeper.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +97,7 @@
       <workItem from="1606456469554" duration="3729000" />
       <workItem from="1606494730779" duration="1579000" />
       <workItem from="1606564970528" duration="17184000" />
-      <workItem from="1606593881753" duration="23939000" />
+      <workItem from="1606593881753" duration="24477000" />
     </task>
     <servers />
   </component>

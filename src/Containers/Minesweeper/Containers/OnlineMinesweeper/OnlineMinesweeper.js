@@ -127,7 +127,7 @@ function GameFieldHeader({
         </p>
       ) : null}
       {secondUser && !isActiveField ? (
-        <Button onClick={() => dispatch(actions.A_StartOnlineGameRequest(id))}>START</Button>
+        <Button variant="contained" color="primary" onClick={() => dispatch(actions.A_StartOnlineGameRequest(id))}>START</Button>
       ) : null}
       {isActiveField ? null : <p>NUMBER_ROOM: {id}</p>}
       <p className={classes.firstUserActive}>
