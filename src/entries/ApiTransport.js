@@ -1,7 +1,7 @@
 import axios from "axios";
 
-axios.defaults.baseURL = "http://localhost:4001/api";
-//"https://mine-sweeper-backend-api.herokuapp.com/api"
+axios.defaults.baseURL = //"http://localhost:4001/api";
+"https://mine-sweeper-backend-api.herokuapp.com/api"
 //export const setAuthHeaders = () =>
 //  (axios.defaults.headers.common = { Authorization: `Bearer ${localStorage.getItem("jwtToken")}` });
 

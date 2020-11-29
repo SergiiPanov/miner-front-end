@@ -11,57 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="838d5b8f-0c91-4d3d-9f84-a754d75acf48" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/FieldDrawers/FieldDrawers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/FieldDrawers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/OnlineMinesweeper/OnlineMinesweeper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/OnlineMinesweeper/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/SinglePlayerMinesweeper/SinglePlayerMinesweeper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/SinglePlayerMinesweeper/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/Auth/containers/SignIn/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Auth/containers/SignIn/SignIn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/Auth/containers/SignUp/SignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Auth/containers/SignUp/SignUp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/Auth/store/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Auth/store/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/Auth/store/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Auth/store/reducers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/Auth/store/sagas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Auth/store/sagas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/Auth/store/selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Auth/store/selectors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/Main/containers/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Main/containers/Main/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/Main/containers/Main/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Main/containers/Main/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/Main/containers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Main/containers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/CreateRoom/CreateRoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/CreateRoom/CreateRoom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/CreateRoom/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/CreateRoom/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/FindRoom/FindRoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/FindRoom/FindRoom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/GameSetter/GameSetter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/GameSetter/GameSetter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/GameSetter/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/GameSetter/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/MainSweeper/MainSweeper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/MainSweeper/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/OfflineSetter/OfflineSetter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/OfflineSetter/OfflineSetter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/OfflineSetter/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/OfflineSetter/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/OnlineSetter/OnlineSetter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/OnlineSetter/OnlineSetter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/OnlineSetter/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/OnlineSetter/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/Containers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/Minesweeper/store/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/store/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/Minesweeper/store/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/store/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/Minesweeper/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/Minesweeper/store/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/store/reducers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/Minesweeper/store/sagas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/store/sagas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/Minesweeper/store/selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Minesweeper/store/selectors.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entries/ApiTransport.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/entries/ApiTransport.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/history/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/history/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reportWebVitals.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routers/constants/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/constants/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/sagas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/sagas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/requireAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/requireAuth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/routerAssessors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/routerAssessors.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +97,7 @@
       <workItem from="1606456469554" duration="3729000" />
       <workItem from="1606494730779" duration="1579000" />
       <workItem from="1606564970528" duration="17184000" />
-      <workItem from="1606593881753" duration="23166000" />
+      <workItem from="1606593881753" duration="23939000" />
     </task>
     <servers />
   </component>
