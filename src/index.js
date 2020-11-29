@@ -7,14 +7,12 @@ import history from "./history";
 import store from "./store";
 
 ReactDOM.render(
-    <React.StrictMode>
-        <Provider store={store}>
-            <ConnectedRouter history={history}>
-                <App />
-            </ConnectedRouter>
-        </Provider>
-    </React.StrictMode>,
-    document.getElementById("root"),
+  <React.StrictMode>
+    <Provider store={store}>
+      <ConnectedRouter history={history}>
+        <App />
+      </ConnectedRouter>
+    </Provider>
+  </React.StrictMode>,
+  document.getElementById("root"),
 );
-
-

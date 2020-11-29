@@ -1,12 +1,11 @@
 import { combineReducers } from "redux";
 import { connectRouter } from "connected-react-router";
-import {mineSweeperReducer} from "../Containers/Minesweeper/store";
-import {authReducer} from "../Containers/Auth/store"
+import { mineSweeperReducer } from "../Containers/Minesweeper/store";
+import { authReducer } from "../Containers/Auth/store";
 
-
-export default history =>
-    combineReducers({
-        router: connectRouter(history),
-        mineSweeperReducer,
-        authReducer,
-    });
+export default (history) =>
+  combineReducers({
+    router: connectRouter(history),
+    mineSweeperReducer,
+    authReducer,
+  });

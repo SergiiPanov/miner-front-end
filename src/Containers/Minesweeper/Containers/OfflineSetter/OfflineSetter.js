@@ -1,19 +1,49 @@
 import React from "react";
-import Button from "@material-ui/core/Button";
-import { useDispatch} from "react-redux";
-import { push } from "connected-react-router";
+import Radio from "@material-ui/core/Radio";
+import RadioGroup from "@material-ui/core/RadioGroup";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
+import FormLabel from "@material-ui/core/FormLabel";
+import {Button} from "@material-ui/core";
+import {useDispatch} from "react-redux";
+import {actions} from "../../store";
+import {Formik, Form} from "formik";
+import {push} from "connected-react-router";
+import {RoutePath} from "../../../../routers/constants";
 
 export default () => {
-
     const dispatch = useDispatch();
-
-
-
     return (
-        <div>
-
-            OFFLINE
-        </div>
-
+        <Formik
+            initialValues={{
+                fieldSize: "10",
+                bombsCount: "10",
+            }}
+            onSubmit={(values) => {
+                const randomPage = Math.floor(Math.random() * 1000);
+                const bombsCount = Math.floor((values.fieldSize ** 2 / 100) * values.bombsCount);
+                dispatch(actions.A_StartOfflineGameSuccess({fieldSize: values.fieldSize, bombsCount} ))
+                dispatch(push(`${RoutePath.OFFLINE_MINESWEEPER}/${randomPage}`));
+            }}
+        >
+            {({handleChange, isSubmitting}) => (
+                <Form>
+                    <FormLabel component="legend">Field size</FormLabel>
+                    <RadioGroup aria-label="Field Size" name="fieldSize" onChange={handleChange}>
+                        <FormControlLabel value="10" control={<Radio/>} label="10"/>
+                        <FormControlLabel value="15" control={<Radio/>} label="15"/>
+                        <FormControlLabel value="20" control={<Radio/>} label="20"/>
+                    </RadioGroup>
+                    <FormLabel component="legend">Bombs</FormLabel>
+                    <RadioGroup aria-label="Field Size" name="bombsCount" onChange={handleChange}>
+                        <FormControlLabel value="10" control={<Radio/>} label="Easy"/>
+                        <FormControlLabel value="20" control={<Radio/>} label="Normal"/>
+                        <FormControlLabel value="30" control={<Radio/>} label="Hell"/>
+                    </RadioGroup>
+                    <Button disabled={isSubmitting} type="submit" fullWidth variant="contained" color="primary">
+                        Create The Game
+                    </Button>
+                </Form>
+            )}
+        </Formik>
     );
 };

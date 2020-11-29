@@ -7,8 +7,8 @@ import moment from "moment";
 import { RoutePath } from "../routers/constants";
 import { actions } from "../Containers/Auth/store";
 
-export default ComposedComponent => {
-  return props => {
+export default (ComposedComponent) => {
+  return (props) => {
     const dispatch = useDispatch();
     const isAuthenticated = useSelector(getAuth());
     useEffect(() => {

@@ -1,5 +1,4 @@
 import * as constants from "./constants";
-import * as jwt from "jsonwebtoken";
 
 const initialState = {
   loading: false,
@@ -38,7 +37,6 @@ export default (state = initialState, action) => {
         loading: false,
         error: null,
       };
-
 
     case constants.SIGN_UP_SUCCESS:
     case constants.SIGN_IN_SUCCESS:
